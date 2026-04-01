@@ -9,12 +9,12 @@
 **내적** 은 두 벡터의 대응하는 성분끼리 곱한 뒤 그 결과들을 모두 합산한 값입니다. 두 벡터 $\mathbf{v}$ 와 $\mathbf{w}$ 의 내적은 $\mathbf{v}\cdot\mathbf{w}$ 로 표기합니다.
 
 $$
-\mathbf{v} = \begin{bmatrix} v_{1} \\\\ v_{2} \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} w_{1} \\\\ w_{2} \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = v_{1}w_{1} + v_{2}w_{2}
+\mathbf{v} = \begin{bmatrix} v\_{1} \\ v\_{2} \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} w\_{1} \\ w\_{2} \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = v\_{1}w\_{1} + v\_{2}w\_{2}
 $$
 
 **예시**:
 $$
-\mathbf{v} = \begin{bmatrix} 4 \\\\ 2 \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} -1 \\\\ 2 \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = (4)(-1) + (2)(2) = -4 + 4 = 0
+\mathbf{v} = \begin{bmatrix} 4 \\ 2 \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = (4)(-1) + (2)(2) = -4 + 4 = 0
 $$
 내적값이 $0$ 이 나왔네요? 이것이 무엇을 의미하는지는 잠시 후에 '직교' 섹션에서 다루겠습니다.
 
@@ -26,7 +26,7 @@ $$
 벡터 $\mathbf{v}$ 의 길이는 $\|\mathbf{v}\|$ 로 표기하며, 자기 자신을 내적한 값에 루트를 씌워 계산합니다. 이것은 피타고라스 정리의 확장판이라고 생각하면 쉽습니다.
 
 $$
-\|\mathbf{v}\| = \sqrt{\mathbf{v}\cdot\mathbf{w}} = \sqrt{v\_{1}^{2} + v\_{2}^{2} + \dots + v\_{n}^{2}}
+\|\mathbf{v}\| = \sqrt{\mathbf{v}\cdot\mathbf{v}} = \sqrt{v\_{1}^{2} + v\_{2}^{2} + \dots + v\_{n}^{2}}
 $$
 
 ### 2.2 단위 벡터 (Unit Vector)
