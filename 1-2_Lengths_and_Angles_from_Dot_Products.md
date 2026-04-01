@@ -13,9 +13,11 @@ $$
 $$
 
 **예시**:
+
 $$
 \mathbf{v} = \begin{bmatrix} 4 \\ 2 \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = (4)(-1) + (2)(2) = -4 + 4 = 0
 $$
+
 내적값이 $0$ 이 나왔네요? 이것이 무엇을 의미하는지는 잠시 후에 '직교' 섹션에서 다루겠습니다.
 
 ---
