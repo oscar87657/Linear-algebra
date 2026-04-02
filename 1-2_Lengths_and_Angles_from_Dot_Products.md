@@ -6,19 +6,20 @@
 
 ## 목차
 
-- [1. 내적 (Dot Product) 이란?](#1-내적-dot-product-이란)
-- [2. 벡터의 길이와 단위 벡터](#2-벡터의-길이와-단위-벡터)
-  - [2.1 벡터의 길이 (Length or Norm)](#21-벡터의-길이-length-or-norm)
-  - [2.2 단위 벡터 (Unit Vector)](#22-단위-벡터-unit-vector)
-- [3. 두 벡터 사이의 각도](#3-두-벡터-사이의-각도)
-- [4. 직교 (Orthogonality)](#4-직교-orthogonality)
-- [5. 두 가지 중요한 부등식](#5-두-가지-중요한-부등식)
-  - [5.1 코시-슈바르츠 부등식 (Schwarz Inequality)](#51-코시-슈바르츠-부등식-schwarz-inequality)
-  - [5.2 삼각 부등식 (Triangle Inequality)](#52-삼각-부등식-triangle-inequality)
-- [요약](#요약)
+- [1. 내적 (Dot Product) 이란?](#dot-product)
+- [2. 벡터의 길이와 단위 벡터](#length-unit)
+  - [2.1 벡터의 길이 (Length or Norm)](#length)
+  - [2.2 단위 벡터 (Unit Vector)](#unit-vector)
+- [3. 두 벡터 사이의 각도](#angles)
+- [4. 직교 (Orthogonality)](#orthogonality)
+- [5. 두 가지 중요한 부등식](#inequalities)
+  - [5.1 코시-슈바르츠 부등식 (Schwarz Inequality)](#schwarz)
+  - [5.2 삼각 부등식 (Triangle Inequality)](#triangle)
+- [요약](#summary)
 
 ---
 
+<a id="dot-product"></a>
 ## 1. 내적 (Dot Product) 이란?
 
 **내적** 은 두 벡터의 대응하는 성분끼리 곱한 뒤 그 결과들을 모두 합산한 값입니다. 두 벡터 $\mathbf{v}$ 와 $\mathbf{w}$ 의 내적은 $\mathbf{v}\cdot\mathbf{w}$ 로 표기합니다.
@@ -30,15 +31,17 @@ $$
 **예시**:
 
 $$
-\mathbf{v} = \begin{bmatrix} 4 \\ 2 \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = (4)(-1) + (2)(2) = -4 + 4 = 0
+\mathbf{v} = \begin{bmatrix} 4 \\ v\_{2} \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = (4)(-1) + (2)(2) = -4 + 4 = 0
 $$
 
 내적값이 $0$ 이 나왔네요? 이것이 무엇을 의미하는지는 잠시 후에 '직교' 섹션에서 다루겠습니다.
 
 ---
 
+<a id="length-unit"></a>
 ## 2. 벡터의 길이와 단위 벡터
 
+<a id="length"></a>
 ### 2.1 벡터의 길이 (Length or Norm)
 벡터 $\mathbf{v}$ 의 길이는 $\|\mathbf{v}\|$ 로 표기하며, 자기 자신을 내적한 값에 루트를 씌워 계산합니다. 이것은 피타고라스 정리의 확장판이라고 생각하면 쉽습니다.
 
@@ -46,6 +49,7 @@ $$
 \|\mathbf{v}\| = \sqrt{\mathbf{v}\cdot\mathbf{v}} = \sqrt{v\_{1}^{2} + v\_{2}^{2} + \dots + v\_{n}^{2}}
 $$
 
+<a id="unit-vector"></a>
 ### 2.2 단위 벡터 (Unit Vector)
 길이가 $1$ 인 벡터를 **단위 벡터** 라고 부릅니다. 어떤 벡터 $\mathbf{v}$ 를 그 벡터의 길이 $\|\mathbf{v}\|$ 로 나누면, 방향은 같으면서 길이는 $1$ 인 단위 벡터 $\mathbf{u}$ 를 얻을 수 있습니다.
 
@@ -55,6 +59,7 @@ $$
 
 ---
 
+<a id="angles"></a>
 ## 3. 두 벡터 사이의 각도
 
 내적은 기하학적으로 두 벡터 사이의 각도 $\theta$ 와 아주 밀접한 관련이 있습니다.
@@ -76,6 +81,7 @@ $$
 
 ---
 
+<a id="orthogonality"></a>
 ## 4. 직교 (Orthogonality)
 
 두 벡터 $\mathbf{v}$ 와 $\mathbf{w}$ 의 내적이 $0$ 이면, 두 벡터는 서로 **수직** 또는 **직교** 한다고 말합니다.
@@ -88,10 +94,12 @@ $$
 
 ---
 
+<a id="inequalities"></a>
 ## 5. 두 가지 중요한 부등식
 
 선형대수학의 기하학적 구조를 지탱하는 두 가지 핵심 부등식이 있습니다.
 
+<a id="schwarz"></a>
 ### 5.1 코시-슈바르츠 부등식 (Schwarz Inequality)
 내적의 절대값은 항상 두 벡터의 길이의 곱보다 작거나 같습니다.
 
@@ -99,26 +107,29 @@ $$
 |\mathbf{v}\cdot\mathbf{w}| \le \|\mathbf{v}\| \|\mathbf{w}\|
 $$
 
-이 식은 $|\cos\theta| \le 1$ 이라는 사실로부터 자연스럽게 도출됩니다.
-
+<a id="triangle"></a>
 ### 5.2 삼각 부등식 (Triangle Inequality)
-두 벡터를 더한 합벡터의 길이는 각 벡터의 길이를 더한 것보다 항상 작거나 같습니다.
+두 벡터를 더한 것의 길이는 각각의 길이를 더한 것보다 항상 작거나 같습니다. (직선 거리가 돌아가는 길보다 짧다는 뜻!)
 
 $$
-\|\mathbf{v} + \mathbf{w}\| \le \|\mathbf{v}\| + \|\mathbf{w}\|
+\|\mathbf{v}+\mathbf{w}\| \le \|\mathbf{v}\| + \|\mathbf{w}\|
 $$
-
-삼각형의 두 변의 길이 합은 나머지 한 변의 길이보다 길다는 기하학적 원리와 같습니다.
 
 ---
 
+<a id="summary"></a>
 ## 요약
 
-1. **내적**: $\mathbf{v}\cdot\mathbf{w} = \sum v\_{i}w\_{i}$ (성분끼리 곱해서 합산)
-2. **길이**: $\|\mathbf{v}\| = \sqrt{\mathbf{v}\cdot\mathbf{v}}$
-3. **직교**: $\mathbf{v}\cdot\mathbf{w} = 0$ 이면 두 벡터는 수직임.
-4. **부등식**: 내적은 길이의 곱을 넘지 못하며($\le$), 합의 길이는 길이의 합을 넘지 못함($\le$).
+| 개념 | 공식 | 기하학적 의미 |
+|:-----|:-----|:-----|
+| **내적** | $\mathbf{v}\cdot\mathbf{w}$ | 방향의 일치성 측정 |
+| **길이** | $\|\mathbf{v}\| = \sqrt{\mathbf{v}\cdot\mathbf{v}}$ | 원점에서의 거리 |
+| **단위 벡터** | $\mathbf{u} = \mathbf{v}/\|\mathbf{v}\|$ | 방향만 남긴 벡터 (길이 1) |
+| **직교** | $\mathbf{v}\cdot\mathbf{w} = 0$ | 두 벡터가 수직임 |
+| **코시-슈바르츠** | $|\mathbf{v}\cdot\mathbf{w}| \le \|\mathbf{v}\| \|\mathbf{w}\|$ | $\cos\theta$ 가 1을 넘을 수 없음 |
 
 ---
 
-> **다음 시간에는**: 행렬과 벡터의 곱셈을 통해, 벡터들의 선형 결합이 어떻게 공간을 채워나가는지 알아보겠습니다.
+<br>
+
+> **다음 시간에는**: 벡터의 묶음인 **행렬(Matrix)** 과 그 행렬이 만드는 새로운 영토인 **열 공간(Column Space)** 에 대해 알아보겠습니다. 수고하셨습니다! 👋🏻
