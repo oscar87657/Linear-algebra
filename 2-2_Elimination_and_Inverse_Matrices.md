@@ -105,22 +105,27 @@ $$
 
 **Step 1: 확장 행렬 만들기 $[A \mid I]$**
 오른쪽에 단위 행렬을 붙입니다.
+
 $$
 \begin{bmatrix} 1 & 3 & \mid & 1 & 0 \\\\ 2 & 7 & \mid & 0 & 1 \end{bmatrix}
 $$
 
 **Step 2: 왼쪽(A) 을 소거하여 단위 행렬(I) 로 만들기**
 - 2행 소거: (2행) $-$ (1행 $\times 2$)
+
 $$
 \begin{bmatrix} 1 & 3 & \mid & 1 & 0 \\\\ 0 & 1 & \mid & -2 & 1 \end{bmatrix}
 $$
+
 - 1행 소거: (1행) $-$ (2행 $\times 3$)
+- 
 $$
 \begin{bmatrix} 1 & 0 & \mid & 7 & -3 \\\\ 0 & 1 & \mid & -2 & 1 \end{bmatrix}
 $$
 
 **Step 3: 오른쪽 결과 확인**
 왼쪽이 $I$ 가 되었을 때, 오른쪽에 남은 행렬이 바로 **역행렬 $A^{-1}$** 입니다.
+
 $$
 A^{-1} = \begin{bmatrix} 7 & -3 \\\\ -2 & 1 \end{bmatrix}
 $$
