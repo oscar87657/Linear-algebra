@@ -140,11 +140,11 @@ A = \begin{bmatrix} 1 & 2 & 1 \\\\ 2 & 4 & 5 \\\\ 3 & 6 & 9 \end{bmatrix} \xrigh
 $$
 
 1.  **$C$ 구하기**: 피벗이 1열과 3열에 있으므로, $A$ 의 **1열과 3열** 을 가져옵니다.
-    - $C = \begin{bmatrix} 1 & 1 \\\\ 2 & 5 \\\\ 3 & 9 \end{bmatrix}$
+    - $$C = \begin{bmatrix} 1 & 1 \\\\ 2 & 5 \\\\ 3 & 9 \end{bmatrix}$$
 2.  **$R$ 구하기**: $R_{0}$ 에서 $0$ 이 아닌 행들(1행, 2행)만 가져옵니다.
-    - $R = \begin{bmatrix} 1 & 2 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}$
+    - $$R = \begin{bmatrix} 1 & 2 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}$$
 3.  **결과 확인**: 실제로 $C \times R$ 을 하면 원래의 $A$ 가 마법처럼 복원됩니다!
-    - $\begin{bmatrix} 1 & 1 \\\\ 2 & 5 \\\\ 3 & 9 \end{bmatrix} \begin{bmatrix} 1 & 2 & 0 \\\\ 0 & 0 & 1 \end{bmatrix} = \begin{bmatrix} 1 & 2 & 1 \\\\ 2 & 4 & 5 \\\\ 3 & 6 & 9 \end{bmatrix} = A$
+    - $$\begin{bmatrix} 1 & 1 \\\\ 2 & 5 \\\\ 3 & 9 \end{bmatrix} \begin{bmatrix} 1 & 2 & 0 \\\\ 0 & 0 & 1 \end{bmatrix} = \begin{bmatrix} 1 & 2 & 1 \\\\ 2 & 4 & 5 \\\\ 3 & 6 & 9 \end{bmatrix} = A$$
 
 > **왜 중요한가요?**: $C$ 는 행렬의 **'뼈대(열 공간)'** 를 보여주고, $R$ 은 그 뼈대들이 어떻게 조합되는지, 그리고 **'숨겨진 해(영 공간)'** 가 어디에 있는지 한눈에 보여주기 때문입니다.
 
