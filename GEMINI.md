@@ -45,8 +45,10 @@ git hub : https://github.com/oscar87657/Linear-algebra.git
   - Chapter 1.1 ~ 2.4: 기초 보강 및 서식 정리 완료.
   - Chapter 2.5: 미분과 차분 행렬 정리 완료.
   - Chapter 3.1 ~ 3.3: 벡터 공간, 영 공간($A=CR$), $Ax=b$ 의 완전한 해 정리 완료.
+  - Chapter 3.4: 선형 독립, 기저, 차원 정리 완료.
+  - Chapter 3.5: 네 기본 부분 공간의 차원 (선형대수학 기본 정리 Part 1) 정리 완료.
 - **향후 계획**: 
-  - Chapter 3.4 (4대 기본 부분 공간) 부터 작업을 이어갈 예정.
+  - Chapter 4 (직교성, Orthogonality) 부터 작업을 이어갈 예정.
   - 사용자가 제공하는 PDF 자료의 흐름에 맞추어 'Research -> Strategy -> Execution' 주기를 유지함.
 
 ---
