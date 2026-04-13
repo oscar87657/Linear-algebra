@@ -31,7 +31,7 @@ $$
 **예시**:
 
 $$
-\mathbf{v} = \begin{bmatrix} 4 \\ v\_{2} \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = (4)(-1) + (2)(2) = -4 + 4 = 0
+\mathbf{v} = \begin{bmatrix} 4 \\\\ 2 \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} -1 \\\\ 2 \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = (4)(-1) + (2)(2) = -4 + 4 = 0
 $$
 
 내적값이 $0$ 이 나왔네요? 이것이 무엇을 의미하는지는 잠시 후에 '직교' 섹션에서 다루겠습니다.
@@ -74,6 +74,22 @@ $$
 \cos\theta = \frac{\mathbf{v}\cdot\mathbf{w}}{\|\mathbf{v}\| \|\mathbf{w}\|}
 $$
 
+**[실전 예시]** $\mathbf{v} = [1, 0]^{T}$ 와 $\mathbf{w} = [1, 1]^{T}$ 사이의 각도를 구해봅시다.
+
+$$
+\mathbf{v}\cdot\mathbf{w} = (1)(1) + (0)(1) = 1
+$$
+
+$$
+\|\mathbf{v}\| = \sqrt{1^{2} + 0^{2}} = 1, \quad \|\mathbf{w}\| = \sqrt{1^{2} + 1^{2}} = \sqrt{2}
+$$
+
+$$
+\cos\theta = \frac{1}{1 \cdot \sqrt{2}} = \frac{1}{\sqrt{2}} \implies \theta = 45^{\circ}
+$$
+
+오른쪽을 가리키는 벡터와 오른쪽 위 45도를 가리키는 벡터 사이의 각도가 $45^{\circ}$ 라는 것이 직관과 일치하죠?
+
 **각도에 따른 내적의 의미**:
 - $\cos\theta \gt 0$: 각도가 $90^{\circ}$ 보다 작음 (예각, 같은 방향성)
 - $\cos\theta = 0$: 각도가 정확히 $90^{\circ}$ 임 (**직교**, Perpendicular)
@@ -107,13 +123,17 @@ $$
 |\mathbf{v}\cdot\mathbf{w}| \le \|\mathbf{v}\| \|\mathbf{w}\|
 $$
 
+이 부등식은 사실 앞에서 본 $\cos\theta$ 공식에서 바로 나옵니다. $|\cos\theta| \le 1$ 이니까 $|\mathbf{v}\cdot\mathbf{w}| = \|\mathbf{v}\|\|\mathbf{w}\||\cos\theta| \le \|\mathbf{v}\|\|\mathbf{w}\|$ 가 되는 것이죠. 쉽게 말해 **"두 벡터의 내적이 아무리 커봤자 각각의 길이를 곱한 것보다 크긴 불가능하다"** 는 뜻입니다.
+
 <a id="triangle"></a>
 ### 5.2 삼각 부등식 (Triangle Inequality)
-두 벡터를 더한 것의 길이는 각각의 길이를 더한 것보다 항상 작거나 같습니다. (직선 거리가 돌아가는 길보다 짧다는 뜻!)
+두 벡터를 더한 것의 길이는 각각의 길이를 더한 것보다 항상 작거나 같습니다.
 
 $$
 \|\mathbf{v}+\mathbf{w}\| \le \|\mathbf{v}\| + \|\mathbf{w}\|
 $$
+
+> **비유**: 서울에서 부산을 갈 때 직선으로 가는 거리(왼쪽) 는 대구를 경유해서 가는 거리(오른쪽) 보다 항상 짧거나 같습니다. 두 지점을 잇는 직선이 가장 짧은 경로이기 때문입니다!
 
 ---
 
