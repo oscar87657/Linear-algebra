@@ -183,17 +183,17 @@ $$
 - 행 공간: $(1, 2, 3)$ 방향의 **직선** (차원 1)
 - 열 공간:
   
-  $$
-  \begin{bmatrix} 1 \\\\ 2 \end{bmatrix}
-  $$
+$$
+\begin{bmatrix} 1 \\\\ 2 \end{bmatrix}
+$$
 
    방향의 **직선** (차원 1)
 - 영 공간: $x\_{1} + 2x\_{2} + 3x\_{3} = 0$ 인 $R^{3}$ 의 **평면** (차원 2)
 - 왼쪽 영 공간:
 
-  $$
-  \begin{bmatrix} 1 \\\\ -1 \end{bmatrix}
-  $$
+$$
+\begin{bmatrix} 1 \\\\ -1 \end{bmatrix}
+$$
 
    방향의 **직선** (차원 1)
 
