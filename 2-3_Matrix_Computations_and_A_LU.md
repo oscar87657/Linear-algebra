@@ -42,15 +42,11 @@
 이 두 행렬을 곱하면 다시 원본 $A$ 가 됩니다.
 
 $$
-
 A = \begin{bmatrix} 2 & 1 \\\\ 6 & 8 \end{bmatrix}, \quad L = \begin{bmatrix} 1 & 0 \\\\ 3 & 1 \end{bmatrix}, \quad U = \begin{bmatrix} 2 & 1 \\\\ 0 & 5 \end{bmatrix}
-
 $$
 
 $$
-
 LU = \begin{bmatrix} 1 & 0 \\\\ 3 & 1 \end{bmatrix} \begin{bmatrix} 2 & 1 \\\\ 0 & 5 \end{bmatrix} = \begin{bmatrix} 2 & 1 \\\\ 6 & 8 \end{bmatrix} = A
-
 $$
 
 ---
@@ -63,9 +59,7 @@ $$
 다음 행렬 $A$ 를 분해해 봅시다.
 
 $$
-
 A = \begin{bmatrix} 2 & 1 \\\\ 6 & 8 \end{bmatrix}
-
 $$
 
 **Step 1: 소거 진행 (U 찾기)**
@@ -73,18 +67,14 @@ $$
 - 결과는 다음과 같습니다.
 
 $$
-
 U = \begin{bmatrix} 2 & 1 \\\\ 0 & 5 \end{bmatrix}
-
 $$
 
 **Step 2: 기록 보관 (L 찾기)**
 - 방금 사용한 배수 **3** 을 $L$ 의 2행 1열 자리에 넣습니다. 대각선은 모두 **1** 로 채웁니다.
 
 $$
-
 L = \begin{bmatrix} 1 & 0 \\\\ 3 & 1 \end{bmatrix}
-
 $$
 
 이처럼 $A = LU$ 는 **"소거 전의 기록 ($L$) 과 소거 후의 결과 ($U$) 가 만나면 원본 ($A$) 이 된다"** 는 아름다운 공식입니다.
