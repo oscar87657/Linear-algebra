@@ -40,6 +40,7 @@
 **[예시: 반대 방향으로 2배 늘리기]**
 
 $$
+
 \mathbf{v} = 
 \begin{bmatrix}
   2 \\
@@ -50,6 +51,7 @@ $$
   -4 \\
   2
 \end{bmatrix}
+
 $$
 
 - **해석**: 오른쪽으로 2, 아래로 1 가던 화살표가 이제 **왼쪽으로 4, 위로 2** 가는 화살표로 변했습니다.
@@ -64,7 +66,9 @@ $$
 **[2차원 실전 예시]**
 
 $$
+
 \mathbf{v} = \begin{bmatrix} 2 \\\\ 1 \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} 1 \\\\ 3 \end{bmatrix} \implies \mathbf{v} + \mathbf{w} = \begin{bmatrix} 3 \\\\ 4 \end{bmatrix}
+
 $$
 
 $\mathbf{v}$ 를 따라 오른쪽으로 2, 위로 1 이동한 뒤, $\mathbf{w}$ 를 따라 오른쪽으로 1, 위로 3 이동하면 최종 위치는 오른쪽 3, 위 4 입니다.
@@ -72,6 +76,7 @@ $\mathbf{v}$ 를 따라 오른쪽으로 2, 위로 1 이동한 뒤, $\mathbf{w}$ 
 **[3차원 확장 예시]**
 
 $$
+
 \mathbf{v} = 
 \begin{bmatrix}
   1 \\
@@ -90,6 +95,7 @@ $$
   1 \\
   2
 \end{bmatrix}
+
 $$
 
 ---
@@ -102,7 +108,9 @@ $$
 가장 중요한 개념입니다. 여러 벡터를 늘리고($c \mathbf{v}$) 줄여서 더하는($d \mathbf{w}$) 모든 행위를 **선형 결합** 이라고 합니다.
 
 $$
+
 c \mathbf{v} + d \mathbf{w}
+
 $$
 
 <a id="independent"></a>
@@ -111,6 +119,7 @@ $$
 두 벡터의 방향이 다르면($\mathbf{v} \ne k \mathbf{w}$), 이들의 선형 결합은 광활한 **평면** 을 만듭니다.
 
 $$
+
 \mathbf{v}_{1} = 
 \begin{bmatrix}
   1 \\
@@ -121,6 +130,7 @@ $$
   0 \\
   1
 \end{bmatrix}
+
 $$
 
 목표 지점 $\mathbf{b}$ 가 $[5, 3]$ 일 때, 우리는 $5\mathbf{v}\_{1}+3\mathbf{v}\_{2}$ 라는 레시피로 정확히 그 지점에 도달할 수 있습니다.
@@ -131,6 +141,7 @@ $$
 두 벡터의 방향이 같으면(어느 하나가 다른 하나의 배수면), 아무리 선형 결합을 해도 **직선 밖으로 나갈 수 없습니다.**
 
 $$
+
 \mathbf{v} = 
 \begin{bmatrix}
   1 \\
@@ -141,6 +152,7 @@ $$
   2 \\
   2
 \end{bmatrix}
+
 $$
 
 - **문제**: $\mathbf{w} = 2\mathbf{v}$ 입니다. $\mathbf{w}$ 가 $\mathbf{v}$ 의 2배짜리 복사본이라, 아무리 $c\mathbf{v} + d\mathbf{w}$ 를 계산해도 결국 $(c + 2d)\mathbf{v}$ 가 될 뿐입니다. 한 가지 화살표 방향 위에서만 머뭅니다.
@@ -156,6 +168,7 @@ $$
 **Q1. 다음 벡터들의 선형 결합으로 $[4, 5]$ 에 도달하기 위한 $c$ 와 $d$ 를 구해보세요.**
 
 $$
+
 \mathbf{v} = 
 \begin{bmatrix}
   1 \\
@@ -166,6 +179,7 @@ $$
   0 \\
   1
 \end{bmatrix}
+
 $$
 
 **[정답 확인]**

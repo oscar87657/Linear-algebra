@@ -25,13 +25,17 @@
 **내적** 은 두 벡터의 대응하는 성분끼리 곱한 뒤 그 결과들을 모두 합산한 값입니다. 두 벡터 $\mathbf{v}$ 와 $\mathbf{w}$ 의 내적은 $\mathbf{v}\cdot\mathbf{w}$ 로 표기합니다.
 
 $$
+
 \mathbf{v} = \begin{bmatrix} v\_{1} \\ v\_{2} \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} w\_{1} \\ w\_{2} \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = v\_{1}w\_{1} + v\_{2}w\_{2}
+
 $$
 
 **예시**:
 
 $$
+
 \mathbf{v} = \begin{bmatrix} 4 \\\\ 2 \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} -1 \\\\ 2 \end{bmatrix} \implies \mathbf{v}\cdot\mathbf{w} = (4)(-1) + (2)(2) = -4 + 4 = 0
+
 $$
 
 내적값이 $0$ 이 나왔네요? 이것이 무엇을 의미하는지는 잠시 후에 '직교' 섹션에서 다루겠습니다.
@@ -46,7 +50,9 @@ $$
 벡터 $\mathbf{v}$ 의 길이는 $\|\mathbf{v}\|$ 로 표기하며, 자기 자신을 내적한 값에 루트를 씌워 계산합니다. 이것은 피타고라스 정리의 확장판이라고 생각하면 쉽습니다.
 
 $$
+
 \|\mathbf{v}\| = \sqrt{\mathbf{v}\cdot\mathbf{v}} = \sqrt{v\_{1}^{2} + v\_{2}^{2} + \dots + v\_{n}^{2}}
+
 $$
 
 <a id="unit-vector"></a>
@@ -54,7 +60,9 @@ $$
 길이가 $1$ 인 벡터를 **단위 벡터** 라고 부릅니다. 어떤 벡터 $\mathbf{v}$ 를 그 벡터의 길이 $\|\mathbf{v}\|$ 로 나누면, 방향은 같으면서 길이는 $1$ 인 단위 벡터 $\mathbf{u}$ 를 얻을 수 있습니다.
 
 $$
+
 \mathbf{u} = \frac{\mathbf{v}}{\|\mathbf{v}\|}
+
 $$
 
 ---
@@ -65,27 +73,37 @@ $$
 내적은 기하학적으로 두 벡터 사이의 각도 $\theta$ 와 아주 밀접한 관련이 있습니다.
 
 $$
+
 \mathbf{v}\cdot\mathbf{w} = \|\mathbf{v}\| \|\mathbf{w}\| \cos\theta
+
 $$
 
 위 공식에서 우리는 $\cos\theta$ 를 다음과 같이 구할 수 있습니다.
 
 $$
+
 \cos\theta = \frac{\mathbf{v}\cdot\mathbf{w}}{\|\mathbf{v}\| \|\mathbf{w}\|}
+
 $$
 
 **[실전 예시]** $\mathbf{v} = [1, 0]^{T}$ 와 $\mathbf{w} = [1, 1]^{T}$ 사이의 각도를 구해봅시다.
 
 $$
+
 \mathbf{v}\cdot\mathbf{w} = (1)(1) + (0)(1) = 1
+
 $$
 
 $$
+
 \|\mathbf{v}\| = \sqrt{1^{2} + 0^{2}} = 1, \quad \|\mathbf{w}\| = \sqrt{1^{2} + 1^{2}} = \sqrt{2}
+
 $$
 
 $$
+
 \cos\theta = \frac{1}{1 \cdot \sqrt{2}} = \frac{1}{\sqrt{2}} \implies \theta = 45^{\circ}
+
 $$
 
 오른쪽을 가리키는 벡터와 오른쪽 위 45도를 가리키는 벡터 사이의 각도가 $45^{\circ}$ 라는 것이 직관과 일치하죠?
@@ -103,7 +121,9 @@ $$
 두 벡터 $\mathbf{v}$ 와 $\mathbf{w}$ 의 내적이 $0$ 이면, 두 벡터는 서로 **수직** 또는 **직교** 한다고 말합니다.
 
 $$
+
 \mathbf{v} \perp \mathbf{w} \iff \mathbf{v}\cdot\mathbf{w} = 0
+
 $$
 
 이것은 선형대수학에서 가장 중요한 개념 중 하나입니다. $0$ 벡터는 모든 벡터와 직교한다는 점도 기억해 두세요!
@@ -120,7 +140,9 @@ $$
 내적의 절대값은 항상 두 벡터의 길이의 곱보다 작거나 같습니다.
 
 $$
+
 |\mathbf{v}\cdot\mathbf{w}| \le \|\mathbf{v}\| \|\mathbf{w}\|
+
 $$
 
 이 부등식은 사실 앞에서 본 $\cos\theta$ 공식에서 바로 나옵니다. $|\cos\theta| \le 1$ 이니까 $|\mathbf{v}\cdot\mathbf{w}| = \|\mathbf{v}\|\|\mathbf{w}\||\cos\theta| \le \|\mathbf{v}\|\|\mathbf{w}\|$ 가 되는 것이죠. 쉽게 말해 **"두 벡터의 내적이 아무리 커봤자 각각의 길이를 곱한 것보다 크긴 불가능하다"** 는 뜻입니다.
@@ -130,7 +152,9 @@ $$
 두 벡터를 더한 것의 길이는 각각의 길이를 더한 것보다 항상 작거나 같습니다.
 
 $$
+
 \|\mathbf{v}+\mathbf{w}\| \le \|\mathbf{v}\| + \|\mathbf{w}\|
+
 $$
 
 > **비유**: 서울에서 부산을 갈 때 직선으로 가는 거리(왼쪽) 는 대구를 경유해서 가는 거리(오른쪽) 보다 항상 짧거나 같습니다. 두 지점을 잇는 직선이 가장 짧은 경로이기 때문입니다!

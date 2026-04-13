@@ -28,7 +28,9 @@
 가장 익숙한 방식입니다. $A$ 의 각 행과 $\mathbf{x}$ 를 각각 내적합니다.
 
 $$
+
 \begin{bmatrix} 1 & 3 \\\\ 2 & 7 \end{bmatrix} \begin{bmatrix} 2 \\\\ 1 \end{bmatrix} = \begin{bmatrix} (1)(2) + (3)(1) \\\\ (2)(2) + (7)(1) \end{bmatrix} = \begin{bmatrix} 5 \\\\ 11 \end{bmatrix}
+
 $$
 
 <a id="column-method"></a>
@@ -36,7 +38,9 @@ $$
 Gilbert Strang 교수님이 강조하는 방식입니다. $A$ 의 열(Column) 들을 $\mathbf{x}$ 의 성분만큼 곱해서 더합니다. 이것을 **선형 결합 (Linear Combination)** 이라고 부릅니다.
 
 $$
+
 2 \begin{bmatrix} 1 \\\\ 2 \end{bmatrix} + 1 \begin{bmatrix} 3 \\\\ 7 \end{bmatrix} = \begin{bmatrix} 2 \\\\ 4 \end{bmatrix} + \begin{bmatrix} 3 \\\\ 7 \end{bmatrix} = \begin{bmatrix} 5 \\\\ 11 \end{bmatrix}
+
 $$
 
 > **핵심**: $A\mathbf{x}$ 는 $A$ 의 열 벡터들의 선형 결합입니다!
@@ -51,8 +55,11 @@ $$
 쉽게 말해, 행렬 $A$ 라는 요리사가 가진 '재료(열 벡터)' 들로 만들 수 있는 **'모든 요리의 범위(영토)'** 입니다.
 
 ### 예시: 3차원 공간에서의 찌그러진 영토
+
 $$
+
 A = \begin{bmatrix} 1 & 0 & 1 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & 0 \end{bmatrix}
+
 $$
 
 위 행렬 $A$ 의 세 번째 열은 첫 번째 열과 두 번째 열의 합(1 + 0 = 1, 0 + 1 = 1, 0 + 0 = 0) 입니다.
