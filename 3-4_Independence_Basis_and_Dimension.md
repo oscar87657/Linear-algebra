@@ -54,10 +54,10 @@ $$
 $Ax = \mathbf{0}$ 을 소거법으로 풀면 랭크 $r = 2$ 가 나오고, 자유 변수가 생깁니다. 자유 변수가 있다는 것 = **영 공간에 영벡터가 아닌 해 존재** = **열들이 종속** 이라는 뜻입니다.
 
 $$
-3\begin{bmatrix} 1 \\\\ 2 \\\\ 1 \end{bmatrix} + 1\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \end{bmatrix} - 1\begin{bmatrix} 3 \\\\ 5 \\\\ 3 \end{bmatrix} = \begin{bmatrix} 0 \\\\ 0 \\\\ 0 \end{bmatrix}
+3\begin{bmatrix} 1 \\\\ 2 \\\\ 1 \end{bmatrix} - 1\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \end{bmatrix} - 1\begin{bmatrix} 3 \\\\ 5 \\\\ 3 \end{bmatrix} = \begin{bmatrix} 0 \\\\ 0 \\\\ 0 \end{bmatrix}
 $$
 
-즉 3열이 1열의 3배에 2열을 더한 것과 같으므로 종속입니다.
+즉 3열이 1열의 3배에서 2열을 뺀 것과 같으므로 종속입니다.
 
 <br>
 
@@ -83,7 +83,7 @@ $$
 벡터들 $v\_{1}, \ldots, v\_{k}$ 가 공간 $S$ 를 **생성(Span)** 한다는 것은, $S$ 의 모든 벡터가 이 벡터들의 선형 결합으로 표현된다는 뜻입니다.
 
 $$
-S = \{ c\_{1}v\_{1} + c\_{2}v\_{2} + \cdots + c\_{k}v\_{k} \mid c\_{1}, \ldots, c\_{k} \in \mathbb{R} \}
+S = \{ c_{1}v_{1} + c_{2}v_{2} + \cdots + c_{k}v_{k} \mid c_{1}, \ldots, c_{k} \in \mathbb{R} \}
 $$
 
 - 행렬 $A$ 의 열들은 **열 공간 $C(A)$** 를 생성합니다.
@@ -130,7 +130,7 @@ $$
 $R^{n}$ 의 가장 유명한 기저는 $n \times n$ 단위 행렬 $I$ 의 열들입니다.
 
 $$
-I = \begin{bmatrix} 1 & 0 \\\\ 0 & 1 \end{bmatrix} \quad (R^{2} \text{ 의 표준 기저}: e\_{1} = \begin{bmatrix} 1 \\\\ 0 \end{bmatrix}, \; e\_{2} = \begin{bmatrix} 0 \\\\ 1 \end{bmatrix})
+I = \begin{bmatrix} 1 & 0 \\\\ 0 & 1 \end{bmatrix} \quad (R^{2} \text{ 의 표준 기저}: e_{1} = \begin{bmatrix} 1 \\\\ 0 \end{bmatrix}, \; e_{2} = \begin{bmatrix} 0 \\\\ 1 \end{bmatrix})
 $$
 
 - **독립**: $c\_{1}e\_{1} + c\_{2}e\_{2} = \mathbf{0}$ 이 되려면 $c\_{1} = c\_{2} = 0$ 이어야 합니다. ✓
@@ -145,11 +145,11 @@ $$
 **[예시 3]** 역행렬이 존재하는 행렬의 열들은 $R^{n}$ 의 기저를 이룹니다.
 
 $$
-A = \begin{bmatrix} 1 & 0 & 0 \\\\ 1 & 1 & 0 \\\\ 1 & 1 & 1 \end{bmatrix} \quad (\text{역행렬 존재}) \quad B = \begin{bmatrix} 1 & 0 & 1 \\\\ 1 & 1 & 2 \\\\ -1 & 1 & 2 \end{bmatrix} \quad (\text{역행렬 없음})
+A = \begin{bmatrix} 1 & 0 & 0 \\\\ 1 & 1 & 0 \\\\ 1 & 1 & 1 \end{bmatrix} \quad (\text{역행렬 존재}) \quad B = \begin{bmatrix} 1 & 0 & 1 \\\\ 1 & 1 & 2 \\\\ 2 & 1 & 3 \end{bmatrix} \quad (\text{역행렬 없음})
 $$
 
 - $A$ : $Ax = \mathbf{0}$ 의 해가 $x = A^{-1}\mathbf{0} = \mathbf{0}$ 뿐. 열들이 **독립** 이고 $R^{3}$ 을 **생성** 합니다. → **기저** ✓
-- $B$ : 종속 열들이 있어 $R^{3}$ 을 생성하지 못합니다. → **기저 아님** ✗
+- $B$ : 3열 = 1열 + 2열이므로 열들이 **종속** ($\det(B) = 0$). $R^{3}$ 을 생성하지 못합니다. → **기저 아님** ✗
 
 > **황금 법칙**: "$n$ 개의 벡터들이 $R^{n}$ 의 기저가 된다 $\iff$ 그 벡터들이 $n \times n$ 역행렬 가능 행렬의 열들이다."
 
@@ -238,13 +238,13 @@ $$
 모든 $2 \times 2$ 행렬의 집합 $M$ 도 벡터 공간입니다. 이 공간의 차원은 **4** 입니다.
 
 $$
-A\_{1} = \begin{bmatrix} 1 & 0 \\\\ 0 & 0 \end{bmatrix}, \quad A\_{2} = \begin{bmatrix} 0 & 1 \\\\ 0 & 0 \end{bmatrix}, \quad A\_{3} = \begin{bmatrix} 0 & 0 \\\\ 1 & 0 \end{bmatrix}, \quad A\_{4} = \begin{bmatrix} 0 & 0 \\\\ 0 & 1 \end{bmatrix}
+A_{1} = \begin{bmatrix} 1 & 0 \\\\ 0 & 0 \end{bmatrix}, \quad A_{2} = \begin{bmatrix} 0 & 1 \\\\ 0 & 0 \end{bmatrix}, \quad A_{3} = \begin{bmatrix} 0 & 0 \\\\ 1 & 0 \end{bmatrix}, \quad A_{4} = \begin{bmatrix} 0 & 0 \\\\ 0 & 1 \end{bmatrix}
 $$
 
 이 네 행렬이 기저입니다. 어떤 $2 \times 2$ 행렬도 이들의 선형 결합으로 표현됩니다.
 
 $$
-\begin{bmatrix} c\_{1} & c\_{2} \\\\ c\_{3} & c\_{4} \end{bmatrix} = c\_{1}A\_{1} + c\_{2}A\_{2} + c\_{3}A\_{3} + c\_{4}A\_{4}
+\begin{bmatrix} c_{1} & c_{2} \\\\ c_{3} & c_{4} \end{bmatrix} = c_{1}A_{1} + c_{2}A_{2} + c_{3}A_{3} + c_{4}A_{4}
 $$
 
 | 행렬 공간 | 차원 |
