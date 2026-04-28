@@ -54,9 +54,11 @@ GitHub: https://github.com/oscar87657/Linear-algebra.git
 - Chapter 3.3: $Ax = b$ 의 완전한 해
 - Chapter 3.4: 선형 독립, 기저, 차원
 - Chapter 3.5: 네 기본 부분 공간의 차원 (기본 정리 Part 1)
+- Chapter 4.1: 벡터와 부분 공간의 직교성
+- Chapter 4.2: 직선과 부분 공간으로의 사영
 
 ### 다음 작업
-- Chapter 4: 직교성 (Orthogonality)
+- Chapter 4.3: 최소 제곱법 (Least Squares Approximations)
 
 ---
 
